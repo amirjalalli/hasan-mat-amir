@@ -1,16 +1,12 @@
-var user = prompt("enter your name")
-
-var arr =[
-    'ali',
-    'hasan',
-    'mmad',
-    'arman',
-    'amir'
+var userData = [
+    {id : 1, name : 'ali' , age: 20},
+    {id : 2, name : 'amir' , age: 20},
+    {id : 3, name : 'mat' , age: 20},
 ]
 
-var isLogin = arr.includes(user)
-if (isLogin === true) {
-    console.log("خوش آمدید")
-} else {
-    console.log("ابتدا باید ثبت نام کنید")
-}
+var isInusere = userData.some(function (user){
+    console.log(user)
+    return user.name == 'hasn'
+})
+
+console.log(isInusere)
